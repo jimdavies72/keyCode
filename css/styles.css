@@ -1,0 +1,192 @@
+
+/* 
+-----
+Fonts
+-----
+
+font-family: 'Roboto', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+
+/* 
+-------
+globals
+-------
+*/
+
+html {
+  box-sizing: border-box;
+}
+
+*, 
+::before, 
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+
+}
+
+:root{
+  --ff-primary: "Roboto", sans-serif;
+  --light-shadow: 22px 22px 15px -10px rgba(0,0,0,0.28);
+  --dark-shadow: 22px 22px 15px -10px rgba(0,0,0,0.66);;
+}
+
+body{
+  font-family: var(--ff-primary);
+}
+
+h1{
+  font-size: 5rem;
+}
+
+h3{
+  font-size: 2rem;
+  margin: 5px 10px;
+  text-transform: capitalize;
+}
+
+p{
+  font-size: 1rem;
+}
+
+
+
+/* 
+----------------
+Key-Code Project
+----------------
+*/
+
+.wrapper{
+  position: relative
+
+}
+
+#splash{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightyellow;
+  max-height: 100vh;
+  height: 100vh;
+  width: 100vw;
+  
+}
+
+#splash div{
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: var(--dark-shadow)
+}
+
+.visible{
+  display: block;
+  z-index: 10;
+}
+
+.hidden{
+  display: none;
+  z-index: -10;
+}
+
+.section{
+  position: absolute;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-height: 100vh;
+  height: 100vh;
+  width: 100vw
+}
+
+#header{
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-bottom: 10rem;
+  box-shadow: var(--light-shadow);
+}
+
+#header h1{
+  width: 100%;
+  text-align: center;
+  background-color: midnightblue;
+  color: white;
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+
+.return-data{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+ .item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:lightsteelblue;
+  box-shadow: var(--light-shadow);
+  width: max;
+  border: 2px solid black;
+  border-radius: 2px;
+}
+
+.item p{
+  width: 100%;
+  padding: 0 5px;
+  text-align: center;
+  background-color: midnightblue;
+  color: white;
+  border-bottom: 1px solid black;
+
+}
+
+/* 
+-------------
+media queries
+-------------
+*/
+
+@media screen and (max-width:620px) {
+  
+  #splash div{
+  width: 70%;
+  margin: 0 auto;
+  border: 0px ;
+  box-shadow: none;
+  text-align: center;
+  }
+  
+  .splash-font{
+    font-size: 1.5rem;
+  }
+
+
+  .return-data{
+    align-items: center;
+    flex-direction: column;
+  }
+  .return-data .item{
+    margin:10px;
+  }
+
+  #header{
+    margin-bottom: 2rem;
+  }
+
+  #header h1{
+    font-size: 3rem
+  }
+
+}
