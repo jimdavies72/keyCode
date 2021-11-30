@@ -1,9 +1,9 @@
 const splash = document.getElementById("splash");
-const mainSection = document.getElementById("main-section");
+const section = document.querySelector(".section")
 const mainEvent = document.getElementById("main-event");
 const eventKey = document.getElementById("event-key");
 const eventCode = document.getElementById("event-code");
-const eventWhich = document.getElementById("event-which");
+const eventWhich = document.querySelectorAll(".event-which");
 
 document.addEventListener("click", () => {
   //remove splash screen if visible and clicked
@@ -15,8 +15,9 @@ document.addEventListener("keypress", (e) => {
   toggleVisible();
 
   // return key data fro the keypress event
-  mainEvent.innerHTML = e.which;
-  eventWhich.innerHTML = e.which;
+  for (let i = 0; i < eventWhich.length; i++){
+    eventWhich[i].innerHTML = e.which;
+  }
   eventKey.innerHTML = e.key;
   eventCode.innerHTML = e.code;
 });
@@ -26,6 +27,8 @@ const toggleVisible = () => {
     if (splash.classList[i] === "visible") {
       splash.classList.remove("visible");
       splash.classList.add("hidden");
+      section.classList.add("visible");
+      section.classList.remove("hidden")
     }
     break;
   }
