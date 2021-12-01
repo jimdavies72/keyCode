@@ -31,7 +31,7 @@ html {
 :root{
   --ff-primary: "Roboto", sans-serif;
   --light-shadow: 22px 22px 15px -10px rgba(0,0,0,0.28);
-  --dark-shadow: 22px 22px 15px -10px rgba(0,0,0,0.66);;
+  --dark-shadow: 22px 22px 15px -10px rgba(0,0,0,0.66);
 }
 
 body{
@@ -157,7 +157,7 @@ media queries
 -------------
 */
 
-@media screen and (max-width:620px) {
+@media screen and (max-width:500px) {
   
   #splash div{
   width: 70%;
@@ -186,6 +186,10 @@ media queries
 
   #header h1{
     font-size: 3rem
+  }
+
+  .item{
+    min-width: 215px;
   }
 
 }
