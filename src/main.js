@@ -13,10 +13,10 @@ document.addEventListener("click", () => {
 document.addEventListener("keypress", (e) => {
   //remove splash screen if visible and keypress
   toggleVisible();
-
-  // return key data fro the keypress event
+  // return key data from the keypress event
+  console.log(eventWhich)
   for (let i = 0; i < eventWhich.length; i++){
-    eventWhich[i].innerHTML = e.which;
+    eventWhich[i].innerHTML = e.which;a
   }
   eventKey.innerHTML = e.key;
   eventCode.innerHTML = e.code;
