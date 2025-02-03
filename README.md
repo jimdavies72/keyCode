@@ -1,5 +1,14 @@
-# keyCode
+# Repo: keyCode
+![Static Badge](https://img.shields.io/badge/Dev_status-Development-green)
+![Static Badge](https://img.shields.io/badge/Test_status-Untested-red)
 
-**CodeNation Week3: Key-Code challenge**
+## Reason: Bootcamp learning HTML, CSS and JavaScript 
 
-Some simple JS, HTML and CSS manipulation to produce an app that presents the keycode of a button press.
+### Description
+This repo represents Some simple JS, HTML and CSS manipulation to produce an app that presents the keycode of a button press.
+
+### Project Tech Stack:
+
+- HTML
+- CSS
+- JavaScript
